@@ -50,7 +50,14 @@ plt.figure(figsize=(10,6))
 plt.scatter(results[0,:], results[1,:], c=results[2,:], cmap="viridis")
 plt.xlabel("Risk (Volatility)")
 plt.ylabel("Expected Return")
+
+best_weights = weights_record[max_sharpe_idx]
+
+print("\nOptimal Portfolio Allocation:")
+for stock, weight in zip(stocks, best_weights):
+    print(stock, ":", round(weight*100,2), "%")
 plt.title("Efficient Frontier - Portfolio Optimization")
 plt.colorbar(label="Sharpe Ratio")
 plt.scatter(best_volatility, best_return, color="red", s=100)
+
 plt.show()
