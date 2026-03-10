@@ -20,4 +20,9 @@ yfinance
 Output:
 Best Portfolio Return: 0.0015602941832709037
 Best Portfolio Risk: 0.021978936407548395
-
+Optimal Portfolio Allocation:
+AAPL : 11.25 %
+MSFT : 1.18 %
+GOOGL : 55.38 %
+AMZN : 1.76 %
+TSLA : 30.44 %
